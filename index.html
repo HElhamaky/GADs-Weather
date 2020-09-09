@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="summary-card">
+        <form action="">
+          <label for="City">City Name</label>
+          <input
+            id="City"
+            name="City"
+            type="search"
+            placeholder="Enter City Name"
+          />
+          <em class="fa fa-search"></em>
+        </form>
+
+        <div class="flex-row1">
+          <div class="flex-col">
+            <h1>Cairo</h1>
+            <p>Haze</p>
+          </div>
+          <div class="flex-col col2">
+            <div class="flex-rw">
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+              <h2 data-degree>25&deg; C</h2>
+            </div>
+            <h3>Feels Like 22 &deg;</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="details-card">
+        <div class="div1">
+          <em class="fas fa-umbrella"></em>
+          <span>40%</span>
+          <p>Chance of Rain</p>
+        </div>
+        <div class="div2">
+          <em class="fas fa-tint"></em>
+          <span>50%</span>
+          <p>Humidity</p>
+        </div>
+        <div class="div3">
+          <em class="fas fa-wind"></em>
+          <span>5 km/h</span>
+          <p>Wind</p>
+        </div>
+        <div class="div4">
+          <em class="fas fa-cloud-rain"></em>
+          <span>0 cm</span>
+          <p>
+            Precipitation
+          </p>
+        </div>
+        <div class="div5">
+          <em class="fas fa-sun"></em>
+          <span>5</span>
+          <p>UV Index</p>
+        </div>
+        <div class="div6">
+          <em class="fas fa-glasses"></em>
+          <span>3.2 km</span>
+          <p>Visibility</p>
+        </div>
+      </div>
+    </div>
+    <script src="./app2.js"></script>
+  </body>
+</html>
