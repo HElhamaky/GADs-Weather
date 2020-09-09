@@ -21,7 +21,7 @@ submit.addEventListener("click", function (event) {
 
 function getWeather(InputCity) {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${InputCity}&APPID=df724584aade5bdf221ae11820f06572&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?q=${InputCity}&APPID=df724584aade5bdf221ae11820f06572&units=metric`
   )
     .then((response) => response.json())
     .then((data) => {
