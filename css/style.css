@@ -17,8 +17,9 @@ body {
   height: 100vh;
 }
 
-.container{
+.container {
   padding-top: 5%;
+  height: fit-content;
 }
 
 .summary-card {
@@ -110,7 +111,7 @@ form button {
 .details-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   margin: auto;
   font-family: "Titillium Web", sans-serif;
   color: white;
@@ -150,26 +151,21 @@ form button {
 .div6 {
   grid-area: 2 / 3 / 3 / 4;
 }
-.div7 {
-  grid-area: 3 / 1 / 4 / 2;
-}
-.div8 {
-  grid-area: 3 / 2 / 4 / 3;
-}
-.div9 {
-  grid-area: 3 / 3 / 4 / 4;
-}
 
 @media only screen and (max-width: 600px) {
+  body {
+    height: fit-content;
+  }
   .flex-row1 {
-    display: flex;
-    flex-flow: column wrap;
+    max-width: 30rem;
     align-items: center;
     font-family: "Titillium Web", sans-serif;
+    flex-flow: column;
+    margin: auto;
   }
 
   .flex-col {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -179,7 +175,75 @@ form button {
   .details-card div {
     padding-left: 20%;
   }
-  .col2 {
-    margin-left: -3rem;
+
+  .flex-col h1 {
+    font-size: 30pt;
   }
+
+  .flex-col p {
+    font-size: 15pt;
+    font-weight: 300;
+    padding-left: 0.25rem;
+  }
+
+  .flex-col h2 {
+    font-size: 20pt;
+  }
+
+  .flex-row1 h3 {
+    font-weight: 100;
+    font-size: 15pt;
+    margin-left: 4rem;
+  }
+
+  form{
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  form input {
+    width: 55%;
+    margin: 1rem auto;
+  }
+  form button {
+    width: 40%;
+    margin: auto;
+  } 
+
+  .details-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: auto;
+    font-family: "Titillium Web", sans-serif;
+    color: white;
+    max-width: 33rem;
+    justify-items: center;
+    align-items: center;
+    height: min-content;
+    
+  }
+
+  .details-card span {
+    font-size: 15pt;
+  }
+  .details-card p {
+    font-size: 9pt;
+  }
+  .details-card em {
+    font-size: 13pt;
+  }
+
+  .summary-card {
+    color: black;
+    max-width: 40rem;
+    height: 10rem;
+    margin-bottom: 6rem;
+    position: relative;
+  }
+
+  .details-card div {
+    padding: 1rem 1rem;
+  }
+  
 }
