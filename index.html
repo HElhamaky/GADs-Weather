@@ -9,29 +9,38 @@
   </head>
   <body>
     <div class="container">
-      <div class="summary-card">
+      <div class="form">
         <form action="">
-          <label for="City">City Name</label>
           <input
+            data-city-input
             id="City"
+            class="input"
             name="City"
-            type="search"
+            type="text"
             placeholder="Enter City Name"
           />
-          <em class="fa fa-search"></em>
+
+          <button id="button">Get Weather</button>
         </form>
+      </div>
+      <div class="summary-card">
+        
 
         <div class="flex-row1">
           <div class="flex-col">
-            <h1>Cairo</h1>
-            <p>Haze</p>
+            <h1 data-city-name>Cairo</h1>
+            <p data-description>Haze</p>
           </div>
           <div class="flex-col col2">
             <div class="flex-rw">
-              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
-              <h2 data-degree>25&deg; C</h2>
+              <img
+                data-icon
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+              />
+              <h2 data-temperature>25&deg; C</h2>
             </div>
-            <h3>Feels Like 22 &deg;</h3>
+            <h3>Feels Like <span data-feels-like>22</span> &deg;</h3>
           </div>
         </div>
       </div>
@@ -39,38 +48,38 @@
       <div class="details-card">
         <div class="div1">
           <em class="fas fa-umbrella"></em>
-          <span>40%</span>
+          <p><span data-rain-chance>40%</span></p>
           <p>Chance of Rain</p>
         </div>
         <div class="div2">
           <em class="fas fa-tint"></em>
-          <span>50%</span>
+          <p><span data-humidity>50%</span></p>
           <p>Humidity</p>
         </div>
         <div class="div3">
           <em class="fas fa-wind"></em>
-          <span>5 km/h</span>
+          <p><span data-wind>5</span> km/h</p>
           <p>Wind</p>
         </div>
         <div class="div4">
           <em class="fas fa-cloud-rain"></em>
-          <span>0 cm</span>
+          <p><span data-precipitation>0</span> cm</p>
           <p>
             Precipitation
           </p>
         </div>
         <div class="div5">
           <em class="fas fa-sun"></em>
-          <span>5</span>
+          <p><span data-uvindex>5</span></p>
           <p>UV Index</p>
         </div>
         <div class="div6">
           <em class="fas fa-glasses"></em>
-          <span>3.2 km</span>
+          <p><span data-visibility>3.2</span>km</p>
           <p>Visibility</p>
         </div>
       </div>
     </div>
-    <script src="./app2.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
