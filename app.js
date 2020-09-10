@@ -99,3 +99,11 @@ function SaveToLocalStorage(data) {
 // const icon = data.weather[0].icon;
 
 // let { Temperature, CityName, CountryCode, Description, FeelLike, IconSrc, RainChance, Humidity, Wind} = CityWeatherData;
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js").then((reg) => {
+      console.log("Service worker registered.", reg);
+    });
+  });
+}
