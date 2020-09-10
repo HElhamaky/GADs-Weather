@@ -184,6 +184,7 @@ form button {
     font-weight: 100;
     font-size: 12pt;
     font-weight: 300;
+    margin-left: 0.5rem;
   }
   .details-card {
     margin-top: 5rem;
