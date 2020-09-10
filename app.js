@@ -83,7 +83,6 @@ function SaveToLocalStorage(data) {
   localStorage.setItem(`${data.name}`, ObjSerialized);
 }
 
-
 // Temperature.innerText = data.main.temp;
 // CityName.innerText = data.name;
 // CountryCode.innerText = data.sys.country;
