@@ -117,7 +117,6 @@ form button {
 .flex-row1 h3 {
   font-weight: 100;
   font-size: 15pt;
-  margin-left: 4rem;
 }
 
 .city * {
@@ -184,10 +183,11 @@ form button {
   .flex-row1 h3 {
     font-weight: 100;
     font-size: 12pt;
-    margin-left: 4rem;
+    font-weight: 300;
   }
   .details-card {
     margin-top: 5rem;
+    padding-left: 2rem;
   }
 }
 
