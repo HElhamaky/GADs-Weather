@@ -24,7 +24,6 @@ body {
 
 .summary-card {
   color: black;
-  max-width: fit-content;
   height: 12rem;
   margin: auto;
   position: relative;
@@ -69,7 +68,7 @@ form button {
 
 .flex-row1 {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-content: center;
   align-items: center;
