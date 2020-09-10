@@ -26,7 +26,11 @@
       <div class="summary-card">
         <div class="flex-row1">
           <div class="flex-col">
-            <h1 data-city-name>Cairo</h1>
+            <div class="city">
+              <h1 data-city-name>Cairo</h1>
+              <span>, </span>
+              <span data-country-code></span>
+            </div>
             <p data-description>Haze</p>
           </div>
           <div class="flex-col col2">
@@ -36,7 +40,7 @@
                 src="http://openweathermap.org/img/wn/10d@2x.png"
                 alt=""
               />
-              <h2 data-temperature>25&deg; C</h2>
+              <h2><span data-temperature>25</span>&deg; C</h2>
             </div>
             <h3>Feels Like <span data-feels-like>22</span> &deg;</h3>
           </div>
@@ -46,12 +50,18 @@
       <div class="details-card">
         <div class="div1">
           <em class="fas fa-umbrella"></em>
-          <p><span data-rain-chance>40%</span></p>
+          <p>
+            <span data-rain-chance>40</span>
+            <span>%</span>
+          </p>
           <p>Chance of Rain</p>
         </div>
         <div class="div2">
           <em class="fas fa-tint"></em>
-          <p><span data-humidity>50%</span></p>
+          <p>
+            <span data-humidity>50</span>
+            <span>%</span>
+          </p>
           <p>Humidity</p>
         </div>
         <div class="div3">
@@ -59,23 +69,7 @@
           <p><span data-wind>5</span> km/h</p>
           <p>Wind</p>
         </div>
-        <div class="div4">
-          <em class="fas fa-cloud-rain"></em>
-          <p><span data-precipitation>0</span> cm</p>
-          <p>
-            Precipitation
-          </p>
-        </div>
-        <div class="div5">
-          <em class="fas fa-sun"></em>
-          <p><span data-uvindex>5</span></p>
-          <p>UV Index</p>
-        </div>
-        <div class="div6">
-          <em class="fas fa-glasses"></em>
-          <p><span data-visibility>3.2</span>km</p>
-          <p>Visibility</p>
-        </div>
+      
       </div>
     </div>
     <script src="./app.js"></script>

@@ -1,5 +1,6 @@
 // const InputCity = document.querySelector("[data-city-input]").value;
 const CityName = document.querySelector("[data-city-name]");
+const CountryCode = document.querySelector("[data-country-code]");
 const Description = document.querySelector("[data-description]");
 const Temperature = document.querySelector("[data-temperature]");
 const FeelLike = document.querySelector("[data-feels-like]");
@@ -26,7 +27,16 @@ function getWeather(InputCity) {
     .then((response) => response.json())
     .then((data) => {
       Temperature.innerText = data.main.temp;
-      CityName.innerText = InputCity;
+      CityName.innerText = data.name;
+      CountryCode.innerText = data.sys.country;
+      Description.innerText = data.weather[0].main;
+      FeelLike.innerText = data.main.feels_like;
+      let IconCode = data.weather[0].icon;
+      Icon.src = `http://openweathermap.org/img/wn/${IconCode}@2x.png`;
+      RainChance.innerText = data.clouds.all;
+      Humidity.innerText = data.main.humidity;
+      Wind.innerText = data.wind.speed;
+      
       const Temp = data.main.temp;
       const description = data.weather[0].main;
       const icon = data.weather[0].icon;
