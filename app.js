@@ -75,7 +75,7 @@ function SaveToLocalStorage(data) {
   Obj.Description = data.weather[0].main;
   Obj.FeelLike = data.main.feels_like;
   let IconCode = data.weather[0].icon;
-  Obj.IconSrc = `http://openweathermap.org/img/wn/${IconCode}@2x.png`;
+  Obj.IconSrc = `https://openweathermap.org/img/wn/${IconCode}@2x.png`;
   Obj.RainChance = data.clouds.all;
   Obj.Humidity = data.main.humidity;
   Obj.Wind = data.wind.speed;
